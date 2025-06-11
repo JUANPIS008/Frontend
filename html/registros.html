@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registros nuevos usuarios</title>
+    <link rel="stylesheet" href="cssregistros.css">
+</head>
+<body>
+    <div class="registro-container">
+    <h1>Registro de Usuario</h1>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <select class="input-style" id="tipoIdentificacion">
+        <option>Cedula de ciudadania</option>
+        <option>Tarjeta de identidad</option>
+        <option>Registro civil</option>
+        <option>Cédula de extranjería</option>
+        <option>Permiso especial de permanencia</option>
+        <option>otro</option>
+    </select>
+    <input type="int" id="numeroIdentificacion" placeholder="Numero de identificación">
+    <input type="password" id="contraseña" placeholder="Contraseña">
+    <input type="date" id="fecha de nacimiento">
+    <button onclick="redirigirLogin()">Registrar</button>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>

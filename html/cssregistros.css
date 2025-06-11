@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.registro-container {
+    background: rgb(33, 224, 94);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+h1 {
+    font-size: 24px;
+    color: #01152a;
+    margin-bottom: 20px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+button {
+    background-color: rgb(71, 97, 123);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+button:hover {
+    background-color: rgb(71, 97, 123);
+}
+.input-style {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}

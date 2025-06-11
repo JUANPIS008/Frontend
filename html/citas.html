@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de citas</title>
+    <link rel="stylesheet" href="csscitas.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">Agendar Cita Médica</h1>
+    <select class="select" id="tipoCita">
+        <option>Médico General</option>
+        <option>Exámenes de Laboratorio</option>
+        <option>Odontología</option>
+    </select>
+    <input type="date" id="fechaCita">
+    <input type="time" id="horaCita" min="06:00" max="18:00">
+    <button class="button" onclick="agendarCita()">Confirmar Cita</button>
+    <script src="script.js"></script>
+    <p id="mensaje" class="mensaje"></p>
+    </div>
+</body>
+</html>
