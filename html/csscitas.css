@@ -48,4 +48,8 @@ body {
     margin-top: 15px;
     display: none;
 }
+.logo {
+    width: 280px;
+    height: auto;
+}
 

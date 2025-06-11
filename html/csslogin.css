@@ -27,3 +27,7 @@ button {
     padding: 10px;
     cursor: pointer;
 }
+.logo {
+    width: 280px;
+    height: auto;
+}

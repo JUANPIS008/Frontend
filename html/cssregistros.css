@@ -49,3 +49,7 @@ button:hover {
     border: 1px solid #ddd;
     background-color: #f1f1f1;
 }
+.logo {
+    width: 280px;
+    height: auto;
+}
