@@ -11,7 +11,6 @@ function agendarCita() {
     var horaCita = document.getElementById("horaCita").value;
     var mensaje = document.getElementById("mensaje");
 
-    // Validar que la fecha no esté vacía
     if (!fechaCita) {
         mensaje.innerText = "Por favor, seleccione una fecha.";
         mensaje.style.display = "block";
@@ -19,7 +18,6 @@ function agendarCita() {
         return;
     }
 
-    // Validar que la fecha sea a partir de mañana
     let hoy = new Date();
     let mañana = new Date();
     mañana.setDate(hoy.getDate() + 1);
@@ -32,8 +30,7 @@ function agendarCita() {
         return;
     }
 
-    // Validar que la hora esté entre 06:00 y 18:00
-    let horaSeleccionada = parseInt(horaCita.split(":")[0]); // Extrae solo la hora
+    let horaSeleccionada = parseInt(horaCita.split(":")[0]); 
     if (!horaCita || horaSeleccionada < 6 || horaSeleccionada > 18) {
         mensaje.innerText = "Seleccione un horario entre las 6:00 AM y 6:00 PM.";
         mensaje.style.display = "block";
@@ -41,8 +38,50 @@ function agendarCita() {
         return;
     }
 
-    // Mensaje de confirmación
     mensaje.innerText = "Su cita fue agendada el día " + fechaCita + " a las " + horaCita + ".";
     mensaje.style.display = "block";
     mensaje.style.color = "green";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("tipoCita").addEventListener("change", actualizarDoctores);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("tipoCita").addEventListener("change", actualizarDoctores);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("tipoCita").addEventListener("change", actualizarDoctores);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("tipoCita").addEventListener("change", actualizarDoctores);
+});
+
+function actualizarDoctores() {
+    let tipoCita = document.getElementById("tipoCita").value;
+    let doctorCita = document.getElementById("doctorCita");
+
+    doctorCita.innerHTML = "";
+
+    let doctores = {
+        general: ["Dra. Meredith Grey", "Dra. Miranda Bailey", "Dr. Richard Webber"],
+        pediatria: ["Dra. Arizona Robbins", "Dr. Alex Karev", "Dra. Jo Wilson"],
+        neurologia: ["Dra. Amelia Shepherd", "Dr. Dreck Shepherd", "Dra. Lexie Grey"]
+    };
+
+    if (doctores[tipoCita]) {
+        doctorCita.style.display = "block";
+        doctorCita.innerHTML = `<option value="">Seleccione un doctor</option>`;
+        
+        doctores[tipoCita].forEach(function (doctor) {
+            let option = document.createElement("option");
+            option.textContent = doctor;
+            option.value = doctor;
+            doctorCita.appendChild(option);
+        });
+    } else {
+        doctorCita.style.display = "none";
+    }
 }

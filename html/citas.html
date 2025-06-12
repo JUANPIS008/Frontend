@@ -12,17 +12,22 @@
     </div>
 
     <div class="container">
-    <h1 class="title">Agendar Cita Médica</h1>
-    <select class="select" id="tipoCita">
-        <option>Médico General</option>
-        <option>Exámenes de Laboratorio</option>
-        <option>Odontología</option>
-    </select>
-    <input type="date" id="fechaCita">
-    <input type="time" id="horaCita" min="06:00" max="18:00">
-    <button class="button" onclick="agendarCita()">Confirmar Cita</button>
-    <script src="script.js"></script>
-    <p id="mensaje" class="mensaje"></p>
+        <h1 class="title">Agendar Cita Médica</h1>
+
+        <select class="input-style" id="tipoCita" onchange="actualizarDoctores()">
+            <option value="">Seleccione un tipo de cita</option>
+            <option value="general">Médico General</option>
+            <option value="pediatria">Pediatría</option>
+            <option value="neurologia">Neurología</option>
+        </select>
+
+        <select class="input-style" id="doctorCita" style="display: none;"></select>
+
+        <input type="date" id="fechaCita">
+        <input type="time" id="horaCita" min="06:00" max="18:00">
+        <button class="button" onclick="agendarCita()">Confirmar Cita</button>
+        <script src="script.js"></script>
+        <p id="mensaje" class="mensaje"></p>
     </div>
 </body>
 </html>
