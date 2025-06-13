@@ -1,4 +1,3 @@
-
 document.getElementById('climaForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const ciudad = document.getElementById('ciudad').value;

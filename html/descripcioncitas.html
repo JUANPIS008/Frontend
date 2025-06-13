@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descripcion agendamiento citas - Citas Médicas</title>
+    <title>Agendamiento de Citas y Clima</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-     <div class="header">
+    <div class="header">
         <img src="Logo Medicenter.png" alt="Logo de la Clínica" class="logo">
     </div>
 
     <div class="descripcion-container">
         <h1>Instrucciones para Agendar Cita Médica</h1>
-        <h3>Para completar correctamente la agenda de cita médica, el usuario debe seguir estos pasos como se muestra en la imagen:
-        </h3>
+        <h3>Para completar correctamente la agenda de cita médica, el usuario debe seguir estos pasos como se muestra en la imagen:</h3>
         <ol>
-            <li><strong> Seleccionar la especialidad médica:</strong>
+            <li><strong>Seleccionar la especialidad médica:</strong>
                 <ul>
                     <li>En el primer menú desplegable, el usuario debe escoger la especialidad en la que desea ser atendido.</li>
                     <li>Ejemplo: <em>Pediatría, Neurología, Médico General</em>, etc.</li>
@@ -28,7 +27,7 @@
                     <li>El usuario debe hacer clic y escoger al médico que atenderá su cita.</li>
                 </ul>
             </li>
-            <li><strong> Seleccionar la fecha:</strong>
+            <li><strong>Seleccionar la fecha:</strong>
                 <ul>
                     <li>En el campo de fecha, el usuario debe elegir el día en que desea agendar su cita.</li>
                     <li>Solo se permiten fechas a partir de mañana para evitar selecciones de días pasados.</li>
@@ -48,10 +47,23 @@
             </li>
         </ol>
         <button onclick="iracitas()">Siguiente</button>
-        <script src="script.js"></script>
     </div>
-    <div  class="header">
-        <img src="imagendescripcioncitas.jpg" alt="descripcion de como agendar citas" class="imagen">
+
+    <div class="header">
+        <img src="imagendescripcioncitas.jpg" alt="Descripción de cómo agendar citas" class="imagen">
     </div>
+
+    <div class="clima-container">
+        <h1>Consulta el Clima en tu Ciudad</h1>
+        <form id="climaForm">
+            <input type="text" id="ciudad" placeholder="Ingresa tu ciudad">
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="resultadoClima"></div>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="clima.js"></script>
 </body>
 </html>
