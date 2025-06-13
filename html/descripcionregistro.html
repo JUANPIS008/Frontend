@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripcion agendamiento citas - Citas Médicas</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+     <div class="header">
+        <img src="Logo Medicenter.png" alt="Logo de la Clínica" class="logo">
+    </div>
+
+    <div class="descripcion-container">
+        <h1>Instrucciones para Agendar Cita Médica</h1>
+        <h3>Para completar correctamente la agenda de cita médica, el usuario debe seguir estos pasos como se muestra en la imagen:
+        </h3>
+        <ol>
+            <li><strong> Seleccionar la especialidad médica:</strong>
+                <ul>
+                    <li>En el primer menú desplegable, el usuario debe escoger la especialidad en la que desea ser atendido.</li>
+                    <li>Ejemplo: <em>Pediatría, Neurología, Médico General</em>, etc.</li>
+                </ul>
+            </li>
+            <li><strong>Elegir el doctor:</strong>
+                <ul>
+                    <li>En el segundo menú desplegable, aparecerá una lista de doctores disponibles según la especialidad seleccionada.</li>
+                    <li>El usuario debe hacer clic y escoger al médico que atenderá su cita.</li>
+                </ul>
+            </li>
+            <li><strong> Seleccionar la fecha:</strong>
+                <ul>
+                    <li>En el campo de fecha, el usuario debe elegir el día en que desea agendar su cita.</li>
+                    <li>Solo se permiten fechas a partir de mañana para evitar selecciones de días pasados.</li>
+                </ul>
+            </li>
+            <li><strong>Escoger la hora:</strong>
+                <ul>
+                    <li>En el campo de hora, el usuario debe seleccionar un horario dentro del rango <strong>6:00 AM - 6:00 PM</strong>.</li>
+                    <li>No se aceptan horarios fuera de este intervalo.</li>
+                </ul>
+            </li>
+            <li><strong>Confirmar la cita:</strong>
+                <ul>
+                    <li>Una vez que todos los campos estén llenos correctamente, el usuario debe hacer clic en el botón <strong>"Confirmar Cita"</strong>.</li>
+                    <li>Si algún campo está vacío o la fecha/hora es inválida, aparecerá un mensaje de advertencia en la pantalla.</li>
+                </ul>
+            </li>
+        </ol>
+        <button onclick="descripcioncitas()">Ir a agendar cita</button>
+        <script src="script.js"></script>
+    </div>
+    <div  class="header">
+        <img src="imagendescripcioncitas.jpg" alt="descripcion de como agendar citas con una imagen" class="imagen">
+    </div>
+</body>
+</html>

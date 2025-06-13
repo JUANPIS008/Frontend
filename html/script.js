@@ -1,5 +1,13 @@
 function login() {
+    window.location.href = "descripcioncitas.html";
+}
+
+function descripcioncitas() {
     window.location.href = "citas.html";
+}
+
+function descripcionregistro() {
+    window.location.href = "registros.html";
 }
 
 function redirigirLogin() {
