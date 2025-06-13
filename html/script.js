@@ -2,10 +2,12 @@ function login() {
     window.location.href = "descripcioncitas.html";
 }
 
-function descripcioncitas() {
+function iracitas() {
     window.location.href = "citas.html";
 }
-
+function iraregistro() {
+    window.location.href = "registros.html";
+}
 function descripcionregistro() {
     window.location.href = "registros.html";
 }

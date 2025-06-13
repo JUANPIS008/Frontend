@@ -13,45 +13,55 @@
 
     <div class="descripcion-container">
         <h1>Instrucciones para Agendar Cita Médica</h1>
-        <h3>Para completar correctamente la agenda de cita médica, el usuario debe seguir estos pasos como se muestra en la imagen:
+        <h3>Para completar correctamente el registro, el usuario debe seguir estos pasos como se muestra en la imagen:
         </h3>
         <ol>
-            <li><strong> Seleccionar la especialidad médica:</strong>
-                <ul>
-                    <li>En el primer menú desplegable, el usuario debe escoger la especialidad en la que desea ser atendido.</li>
-                    <li>Ejemplo: <em>Pediatría, Neurología, Médico General</em>, etc.</li>
-                </ul>
-            </li>
-            <li><strong>Elegir el doctor:</strong>
-                <ul>
-                    <li>En el segundo menú desplegable, aparecerá una lista de doctores disponibles según la especialidad seleccionada.</li>
-                    <li>El usuario debe hacer clic y escoger al médico que atenderá su cita.</li>
-                </ul>
-            </li>
-            <li><strong> Seleccionar la fecha:</strong>
-                <ul>
-                    <li>En el campo de fecha, el usuario debe elegir el día en que desea agendar su cita.</li>
-                    <li>Solo se permiten fechas a partir de mañana para evitar selecciones de días pasados.</li>
-                </ul>
-            </li>
-            <li><strong>Escoger la hora:</strong>
-                <ul>
-                    <li>En el campo de hora, el usuario debe seleccionar un horario dentro del rango <strong>6:00 AM - 6:00 PM</strong>.</li>
-                    <li>No se aceptan horarios fuera de este intervalo.</li>
-                </ul>
-            </li>
-            <li><strong>Confirmar la cita:</strong>
-                <ul>
-                    <li>Una vez que todos los campos estén llenos correctamente, el usuario debe hacer clic en el botón <strong>"Confirmar Cita"</strong>.</li>
-                    <li>Si algún campo está vacío o la fecha/hora es inválida, aparecerá un mensaje de advertencia en la pantalla.</li>
-                </ul>
-            </li>
-        </ol>
-        <button onclick="descripcioncitas()">Ir a agendar cita</button>
+    <li><strong>Ingreso de Nombre Completo</strong> 
+        <ul>    
+        <li>Introduce tu nombre completo tal como aparece en tu documento de identidad.</li>
+        <li>Ejemplo:"Juan Perez"</li>
+        </ul>
+    </li>
+    <li><strong>Selección del Tipo de Identificación</strong> 
+        <ul>
+      <li>Elige el tipo de identificación en el menú desplegable (DNI, pasaporte, cédula, etc.).</li>
+      <li>Ejemplo:Seleccionar "Cédula de Ciudadanía".</li>
+    </ul>
+  </li>
+  <li>
+    <strong>ingreso del Número de Identificación</strong> 
+    <ul>
+      <li>Escribe el número de identificación correspondiente al tipo elegido.</li>
+      <li>Ejemplo:"123456789".</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Creación de una Contraseña Segura</strong> 
+    <ul>
+      <li>Elige una contraseña con al menos 8 caracteres, incluyendo mayúsculas, números y caracteres especiales.</li>
+      <li>Recuerda no decirle a nadie tu contraseña</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Ingreso de la Fecha de Nacimiento</strong>
+    <ul>
+      <li>Introduce la fecha de nacimiento en formato día/mes/año (dd/mm/aaaa).</li>
+      <li>Ejemplo:"15/08/1995".</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Finalización del Registro</strong> 
+    <ul>
+      <li>Haz clic en el botón "Registrar" para completar el proceso.</li>
+      <li>Ejemplo:Presionar el botón y recibir un mensaje de confirmación.</li>
+    </ul>
+  </li>
+</ol>
+        <button onclick="iraregistro()">siguiente</button>
         <script src="script.js"></script>
     </div>
     <div  class="header">
-        <img src="imagendescripcioncitas.jpg" alt="descripcion de como agendar citas con una imagen" class="imagen">
+        <img src="imagendescripcionregistro.jpg" alt="descripcion de como registrarse" class="imagen">
     </div>
 </body>
 </html>
